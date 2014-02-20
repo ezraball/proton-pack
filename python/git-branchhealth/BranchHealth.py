@@ -259,10 +259,14 @@ def parseArguments():
 
 # Main entry point
 def runMain():
-  global gLog, DEBUG, VERBOSE
+  global gParser, gLog, DEBUG, VERBOSE
 
   (repo, remote, numHealthyDays, options) = parseArguments()
   gLog = PrettyLogger(COLOR, DEBUG, VERBOSE)
+
+  if repo == None:
+    gParser.print_help()
+    return
 
   showBranchHealth(repo, remote, int(numHealthyDays), options)
 
