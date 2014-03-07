@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.glasstowerstudios.idfreshener.UUIDView"
+            icon="assets/id-card.png"
+            id="idfreshener.uuidview"
+            name="UUID Viewer"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="Show the UUID viewer"
+            id="idfreshener.showUUIDViewActionSet"
+            label="Show UUID Viewer"
+            visible="true">
+         <action
+               class="com.glasstowerstudios.idfreshener.ShowUUIDViewActionHandler"
+               icon="assets/id-card.png"
+               id="idfreshener.showUUIDViewAction"
+               label="Show UUID Viewer"
+               style="push"
+               toolbarPath="org.eclipse.ui.edit.text.actionSet.presentation">
+         </action>
+<!--
+	    <action id="invokatron.wizard.RunWizardAction"
+	          toolbarPath="org.eclipse.ui.workbench.file/new.ext"
+	          icon="icons/InvokatronIcon16.gif"
+	          tooltip="Starts the New Invokatron Document Wizard."
+	          class="invokatron.wizard.RunWizardAction">
+	    </action>
+-->
+      </actionSet>
+   </extension>
+
+</plugin>
