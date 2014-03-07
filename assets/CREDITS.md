@@ -1,3 +1,3 @@
 Asset Credits
 -----------------------
-* [http://365psd.com/day/2-305](brankic1979-icon-set.zip) Brankic1979
+* [brankic-1979-icon-set.zip](http://365psd.com/day/2-305) Brankic1979
