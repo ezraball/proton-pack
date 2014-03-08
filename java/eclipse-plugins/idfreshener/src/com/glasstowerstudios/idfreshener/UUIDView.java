@@ -1,6 +1,5 @@
 package com.glasstowerstudios.idfreshener;
 
-import java.util.Date;
 import java.util.UUID;
 
 import org.eclipse.swt.SWT;

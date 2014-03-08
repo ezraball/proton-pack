@@ -6,6 +6,8 @@ Bundle-Version: 1.0.0
 Bundle-Activator: com.glasstowerstudios.idfreshener.Activator
 Bundle-Vendor: Glass Tower Studios
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.ui.editors;bundle-version="3.8.100",
+ org.eclipse.jface.text;bundle-version="3.8.101"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
