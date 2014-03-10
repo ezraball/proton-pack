@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.glasstowerstudios.idfreshener_1.0.5.jar" id="com.glasstowerstudios.idfreshener" version="1.0.5">
+      <category name="UUID Freshener"/>
+   </feature>
+   <category-def name="UUID Freshener" label="UUID Freshener">
+      <description>
+         A freshening tool for serial version IDs in Java code.
+      </description>
+   </category-def>
+</site>

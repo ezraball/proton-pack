@@ -14,15 +14,15 @@
    <extension
          point="org.eclipse.ui.actionSets">
       <actionSet
-            description="Show the UUID viewer"
+            description="Regenerate the UUID for the currently open class"
             id="idfreshener.showUUIDViewActionSet"
-            label="Show UUID Viewer"
+            label="Regenerate UUID"
             visible="true">
          <action
                class="com.glasstowerstudios.idfreshener.ShowUUIDViewActionHandler"
                icon="assets/id-card.png"
                id="idfreshener.showUUIDViewAction"
-               label="Show UUID Viewer"
+               label="Regenerate UUID"
                style="push"
                toolbarPath="org.eclipse.ui.edit.text.actionSet.presentation">
          </action>
