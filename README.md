@@ -11,5 +11,8 @@ and other items in the pack.
 List of tools:
 - __branchhealth.py__: A tool for determining which branches within a git
 repository can be safely pruned.
+- __genregression.py__: Based off of http://github.com/mozilla/mozregression. A
+tool to determine the first binary in a set of binaries that a regression was
+found within.
 - __idfreshener__: An Eclipse plugin designed to freshen (re-generate) serial
 version ID member variables of classes that implement Serializable.
