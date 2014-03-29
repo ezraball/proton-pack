@@ -1,0 +1,3 @@
+[submodule "python/transgression"]
+	path = python/transgression
+	url = github:jwir3/transgression

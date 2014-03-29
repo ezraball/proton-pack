@@ -9,7 +9,7 @@ progEmail = 'jaywir3@gmail.com'
 progUrl = 'http://github.com/jwir3/proton-pack'
 entry_points = { 'console_scripts': [
   'git-branchhealth = gitbranchhealth.BranchHealth:runMain',
-  'genregression = genregression.regression:cli',
+  'transgression = transgression.regression:cli',
 ]}
 
 setup(name=progName,
@@ -18,7 +18,7 @@ setup(name=progName,
       author=progAuthor,
       author_email=progEmail,
       url=progUrl,
-      packages=['gitbranchhealth', 'genregression', 'prettylogger'],
+      packages=['gitbranchhealth', 'transgression', 'prettylogger'],
       entry_points=entry_points,
       install_requires=['argparse', 'ansicolors', 'httplib2', 'mozfile',
                         'mozprofile', 'mozrunner', 'BeautifulSoup']
