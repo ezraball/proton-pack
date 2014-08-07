@@ -9,8 +9,17 @@ progEmail = 'jaywir3@gmail.com'
 progUrl = 'http://github.com/jwir3/proton-pack'
 entry_points = { 'console_scripts': [
   'git-branchhealth = gitbranchhealth.BranchHealth:runMain',
-  'transgression = transgression.regression:cli',
 ]}
+
+def installSubmodules():
+  # Run setup.py for all of the imported submodule project(s)
+  submodules = [ 'transgression' ]
+  for module in submodules:
+    installScript = os.path.join(module, 'src', 'setup.py')
+    print("Executing sub-install script: " + installScript)
+    execfile(installScript)
+
+installSubmodules()
 
 setup(name=progName,
       version=progVersion,
@@ -23,3 +32,4 @@ setup(name=progName,
       install_requires=['argparse', 'ansicolors', 'httplib2', 'mozfile',
                         'mozprofile', 'mozrunner', 'BeautifulSoup']
 )
+
